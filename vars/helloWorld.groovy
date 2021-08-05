@@ -1,3 +1,3 @@
 def wish(){
-  echo "hello"
+  println "hello"
 }
