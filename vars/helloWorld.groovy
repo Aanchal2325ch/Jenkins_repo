@@ -1,3 +1,3 @@
-def car(){
+def wish(){
   echo "hello"
 }
