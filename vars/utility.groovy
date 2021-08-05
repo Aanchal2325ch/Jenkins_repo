@@ -1,4 +1,4 @@
-def wish(String name,String wish)
+def wish()
 {
- sh"echo Hello${name}.Today is${wish}."
+ echo "Hi "
 }
