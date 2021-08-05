@@ -1,4 +1,0 @@
-def wish()
-{
- echo "Hi"
-}
