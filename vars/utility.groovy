@@ -1,4 +1,4 @@
 def wish()
 {
- echo "Hi "
+ echo "Hi"
 }
