@@ -1,0 +1,17 @@
+@Library("shared-library") _
+pipeline{
+agent {
+node{
+label 'Slave1'
+}
+}
+stages{
+stage('Parallel Run')
+{
+parallel
+{
+stage('First')
+{
+steps{
+script{
+helloWorld
