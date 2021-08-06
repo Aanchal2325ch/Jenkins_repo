@@ -1,5 +1,5 @@
 def call(Map config =[:]){
-  def scriptcontents = libraryResource 'hello-world.pipeline'
+  def scriptcontents = libraryResource 'scripts/Linux/hello-world.pipeline'
   writeFile file="${config.name}", text: scriptcontents
   
 }
