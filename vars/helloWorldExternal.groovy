@@ -1,3 +1,3 @@
 def call{Map config =[:]}{
-  loadLinuxScript(name: "hello-world.sh")
-  sh "./hello-world.sh ${config.name} ${config.dayOfWeek}."
+  loadLinuxScript(name: "hello-world.groovy")
+  echo "./hello-world.sh ${config.name} ${config.dayOfWeek}."
