@@ -14,4 +14,42 @@ stage('First')
 {
 steps{
 script{
-helloWorld
+    utility.wish()
+    }
+    }
+    }
+    stage('Second'){
+    steps{
+    script{
+    utility.wish()
+    }
+    }
+    }
+    stage('Third'){
+    steps{
+    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+}
+}
+stage('Fourth'){
+steps{
+script{
+echo env.WORKSPACE
+		 echo "My JOB NAME IS ${env.JOB_NAME}"
+		 echo "My Node is ${env.NODE_NAME}"
+		 }
+					
+		
+		}
+		
+		}
+		
+		}
+		
+		
+		}
+	
+	
+	}
+
+
+}
