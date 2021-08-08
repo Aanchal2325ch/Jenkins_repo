@@ -1,1 +1,1 @@
-echo Hello s1. Today is s2.
+println Hello s1. Today is s2.
