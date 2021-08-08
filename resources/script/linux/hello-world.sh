@@ -1,1 +1,1 @@
-echo Hello s1. Today is s2.
+echo Hello $1. Today is $2.
