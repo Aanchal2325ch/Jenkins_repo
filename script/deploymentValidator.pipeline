@@ -1,0 +1,22 @@
+@Library('shared-library') _
+pipeline
+{
+  agent{
+  node{
+  label 'Slave1'
+  }
+  }
+  stages
+  {
+	stage('Build')
+	{
+		steps
+		{
+		script
+		{		
+		pipelineStages.initStage("SharedLibrary")		
+		}
+		}
+	}
+  }
+}
