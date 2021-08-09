@@ -1,1 +1,6 @@
+try{
 sh 'echo "This is my Test step"'
+}
+catch(IllegalArgumentException i) {
+               }
+               
