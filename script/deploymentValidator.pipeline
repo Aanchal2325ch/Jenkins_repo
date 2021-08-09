@@ -14,7 +14,7 @@ pipeline
 		{
 		script
 		{		
-		pipelineStages.initStage("SharedLibrary")		
+		pipelineStages.initStage("Aanchal")		
 		}
 		}
 	}
