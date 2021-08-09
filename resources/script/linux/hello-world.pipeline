@@ -1,6 +1,1 @@
-try{
-echo "This is my Test step"
-}
-catch(IllegalArgumentException i) {
-               }
-               
+println "this is text"
