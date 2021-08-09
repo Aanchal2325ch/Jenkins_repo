@@ -1,5 +1,5 @@
 def validate(name)
 {
-	echo "HI this is ${name} "
-	echo "method successfull run"
+	println "HI this is ${name} "
+	println "method successfull run"
 }
