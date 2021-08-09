@@ -1,4 +1,4 @@
 def call(Map config =[:]){
   loadLinuxScript(name: 'hello-world.pipeline')
-  println "./hello-world.pipeline ${config.name} ${config.dayOfWeek}"
+  echo './hello-world.pipeline ${config.name} ${config.dayOfWeek}'
 }
