@@ -13,7 +13,7 @@ def initStage(parent,params)
 	}
 		
 	}	
-	ptintln parent.parameterMap
+	println parent.parameterMap
 	
 
 }
