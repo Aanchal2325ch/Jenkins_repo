@@ -1,12 +1,14 @@
-def initStage(name)
-{
-	pipeLineUtil.validate(name)
-	def property=readProperties file:'vars/my.properties'
-	property.each
-	{
-		line-> println line
+def initStage(params)
+{     
+	for (param in params) {
+        String[] paramArray = param.split(":", 2)
+        String key = paramArray[0]
+		println key
+        if (paramArray.length == 2) {
+            String value = paramArray[1]
+            println value
 	}
-	println property
-	println property['var1']
-	println "successful"
+	}	
+	
+
 }
