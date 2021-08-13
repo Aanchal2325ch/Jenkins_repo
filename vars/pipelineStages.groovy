@@ -21,7 +21,7 @@ def initStage(s,params)
 	
 
 }
-def readPropertyFile(p,myparent){
+def readPropertyFile(p){
 	def prop=readProperties file:'vars/my.properties'
 	prinln prop
 	//for(param in prop){
