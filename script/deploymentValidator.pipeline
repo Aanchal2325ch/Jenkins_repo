@@ -16,7 +16,7 @@ pipeline
 		script
 		{		
 		pipelineStages.initStage(this,params)
-		pipelineStages.readPropertyFile(this)
+		pipelineStages.readPropertyFile(this,params)
 		}
 		}
 	}
