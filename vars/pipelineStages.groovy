@@ -17,5 +17,13 @@ def initStage(s,params)
 	}	
 	println s.parameterMap
 	
+	
 
 }
+def readPropertyFile(myparent){
+	def prop=readProperties file:'vars/my.properties'
+	prop.each
+	{
+		line-> println line
+	}
+
