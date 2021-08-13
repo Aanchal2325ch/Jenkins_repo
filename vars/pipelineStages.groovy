@@ -1,4 +1,4 @@
-def initStage(super,params)
+def initStage(s,params)
 {     
 	for (param in params) {
         String[] paramArray = param.split(":", 2)
@@ -7,13 +7,13 @@ def initStage(super,params)
         if (paramArray.length == 2) {
             String value = paramArray[1]
             println value
-		super.parameterMap.put(key.toString().trim(), value.toString().trim());
+		s.parameterMap.put(key.toString().trim(), value.toString().trim());
         } else if (paramArray.length == 1) {
-           super.parameterMap.put(key.toString().trim(), "");
+           s.parameterMap.put(key.toString().trim(), "");
 	}
 		
 	}	
-	println super.parameterMap
+	println s.parameterMap
 	
 
 }
