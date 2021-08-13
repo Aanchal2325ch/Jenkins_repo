@@ -1,4 +1,8 @@
 @Library('shared-library') _
+import groovy.transform.Field
+String[] params =  InputParameters.split(";")
+@Field def Map<String,String> parameterMap = new LinkedHashMap<String, String>()
+
 pipeline
 {
   agent any
