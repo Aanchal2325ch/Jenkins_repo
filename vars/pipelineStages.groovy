@@ -21,7 +21,7 @@ def initStage(s,params)
 	
 
 }
-def readPropertyFile(p){
+def readPropertyFile(p,myparent){
 	def prop=readProperties file:'vars/my.properties'
 	for(param in prop){
 		String[] myArray=param.split(":", 2)
