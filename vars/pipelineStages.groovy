@@ -8,7 +8,8 @@ def initStage(parent,params)
             String value = paramArray[1]
             println value
 		parent.parameterMap.put(key.toString().trim(), value.toString().trim());
-		println parent.parameterMap
+        } else if (paramArray.length == 1) {
+            parent.parameterMap.put(key.toString().trim(), "");
 	}
 	}	
 	
