@@ -24,8 +24,8 @@ def readPropertyFile(myparent){
 	def prop=readProperties file:'vars/my.properties'
 	for(param in prop){
 		String[] myArray=param.split(":", 2)
-		println myparent.propertyFileMap.put(myArray[0],myArray[1])
-		println myparent.propertyFileMap
+		println prop.propertyFileMap.put(myArray[0],myArray[1])
+		println prop.propertyFileMap
 	}
 	//prop.each
 	//{
