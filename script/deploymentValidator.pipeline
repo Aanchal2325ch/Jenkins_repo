@@ -15,7 +15,7 @@ pipeline
 		{
 		script
 		{		
-		pipelineStages.initStage(parameterMap,params)		
+		pipelineStages.initStage(this,params)		
 		}
 		}
 	}
