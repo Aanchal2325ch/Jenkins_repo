@@ -1,4 +1,4 @@
-def initStage(parent,params)
+def initStage(params)
 {     
 	for (param in params) {
         String[] paramArray = param.split(":", 2)
