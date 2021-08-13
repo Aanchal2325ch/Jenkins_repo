@@ -3,6 +3,7 @@ import groovy.transform.Field
 import java.lang.String
 import java.lang.Integer
 String[] params =  InputParameters.split(";")
+String[] myparent =prop.split(";")
 @Field def Map<String,String> parameterMap = new LinkedHashMap<String, String>()
 @Field def Map<String,String> propertyFileMap=new  LinkedHashMap<String,String>()
 pipeline
