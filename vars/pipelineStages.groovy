@@ -11,7 +11,9 @@ def initStage(parent,params)
         } else if (paramArray.length == 1) {
             parent.parameterMap.put(key.toString().trim(), "");
 	}
+		
 	}	
+	ptintln parent.parameterMap
 	
 
 }
