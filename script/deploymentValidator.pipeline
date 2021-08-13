@@ -1,6 +1,6 @@
 @Library('shared-library@demo_lib') _
 import groovy.transform.Field
-String[] params =  InputParameters.split(";")
+@Field String[] params =  InputParameters.split(";")
 @Field def Map<String,String> parameterMap = new LinkedHashMap<String, String>()
 
 pipeline
