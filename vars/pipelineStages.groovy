@@ -25,6 +25,9 @@ def readPropertyFile(myparent){
 	prop.each
 	{
 		line-> println line
+		String[] myArray=line.split(":", 2)
+		println myparent.propertyFileMap.put(myArray[0],myArray[1])
+		println myparent.propertyFileMap
 	}
 
 }
