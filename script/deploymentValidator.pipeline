@@ -15,7 +15,7 @@ pipeline
 		{
 		script
 		{		
-		pipelineStages.initStage(this,params)		
+		pipelineStages.initStage(params)		
 		}
 		}
 	}
