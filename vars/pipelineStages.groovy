@@ -7,6 +7,7 @@ def initStage(params)
         if (paramArray.length == 2) {
             String value = paramArray[1]
             println value
+		parameterMap.put(key.toString().trim(), value.toString().trim());
 	}
 	}	
 	
