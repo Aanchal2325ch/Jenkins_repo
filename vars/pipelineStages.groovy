@@ -3,7 +3,7 @@ def initStage(s,params)
 	for (param in params) {
         String[] paramArray = param.split(":", 2)
 		println paramArray
-		println paramArray.length()
+		println paramArray.length
         String key = paramArray[0]
 		println key
         if (paramArray.length == 2) {
