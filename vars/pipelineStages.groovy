@@ -22,12 +22,18 @@ def initStage(s,params)
 }
 def readPropertyFile(myparent){
 	def prop=readProperties file:'vars/my.properties'
-	prop.each
-	{
-		line-> println line
-		String[] myArray=line.split(":", 2)
+	for(param in prop){
+		String[] myArray=param.split(":", 2)
 		println myparent.propertyFileMap.put(myArray[0],myArray[1])
 		println myparent.propertyFileMap
 	}
+	//prop.each
+	//{
+	//	line-> println line
+		
+		// String[] myArray=param.split(":", 2)
+		//println myparent.propertyFileMap.put(myArray[0],myArray[1])
+		// println myparent.propertyFileMap
+	//}
 
 }
