@@ -9,7 +9,7 @@ def initStage(s,params)
         if (paramArray.length == 2) {
             String value = paramArray[1]
             println value
-		// load parameters
+		// load parameters and store it into map
 		s.parameterMap.put(key.toString().trim(), value.toString().trim());
         } else if (paramArray.length == 1) {
            s.parameterMap.put(key.toString().trim(), "");
