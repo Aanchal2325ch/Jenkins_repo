@@ -30,7 +30,7 @@ def readPropertyFile(p){
           //      echo "Translating ${e.getAt('application')} application 
 //${e.getAt('path')}"
 	scan_path = data[scan_path]
-}
+
 	//String[] propArray=prop.line.toString()
 	//println propArray
 	//for(param in prop){
