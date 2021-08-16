@@ -22,8 +22,14 @@ def initStage(s,params)
 
 }
 def readPropertyFile(p){
-	def prop=readProperties file:'vars/my.properties'
-	println prop
+	//def prop=readProperties file:'vars/my.properties'
+	//println prop
+	
+	data = readYaml file: "vars/property/jenkins.yml"
+	scan_path.each { e ->
+                echo "Translating ${e.getAt('application')} application 
+${e.getAt('path')}"
+}
 	//String[] propArray=prop.line.toString()
 	//println propArray
 	//for(param in prop){
@@ -41,5 +47,7 @@ def readPropertyFile(p){
 		//println myparent.propertyFileMap.put(myArray[0],myArray[1])
 		// println myparent.propertyFileMap
 	//}
+	
+	
 
 }
