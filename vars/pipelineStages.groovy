@@ -26,9 +26,10 @@ def readPropertyFile(p){
 	//println prop
 	
 	data = readYaml file: "vars/property/jenkins.yml"
-	scan_path.each { e ->
-                echo "Translating ${e.getAt('application')} application 
-${e.getAt('path')}"
+	//scan_path.each { e ->
+          //      echo "Translating ${e.getAt('application')} application 
+//${e.getAt('path')}"
+	scan_path = data[scan_path]
 }
 	//String[] propArray=prop.line.toString()
 	//println propArray
