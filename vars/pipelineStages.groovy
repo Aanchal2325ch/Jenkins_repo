@@ -28,9 +28,8 @@ def readPropertyFile(p){
 	def datas = readYaml file: 'vars/property/jenkins.yml1'
 	println datas
 	
-	p.scanpathMap.put('scan_path','hi')
         p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path)
-	println p.scan_path
+	println p.scan__path
 	
 	
 	//data = readYaml file: "vars/property/jenkins.yml"
