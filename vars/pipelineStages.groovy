@@ -29,19 +29,15 @@ def readPropertyFile(p){
 	def datas = readYaml file: 'vars/property/jenkins.yml1'
 	println datas
 	
-       // p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path,p.scanpathMap)
+        //p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path,p.scanpathMap)
 	//println p.scan_path
 	
-        //String env = parent.parameterMap.get(pipeLineConstants.ENVIRONMENT)
-        //line = env.substring(0, env.indexOf("-"))
-        //line = line.toUpperCase()
+        def String env = parent.parameterMap.get(pipeLineConstants.ENVIRONMENT)
+        def line = env.substring(0, env.indexOf("-"))
+        def line = line.toUpperCase()
 	
 	
-	//data = readYaml file: "vars/property/jenkins.yml"
-	scan_path.each { e ->
-                echo "Translating ${e.getAt('application')} application 
-${e.getAt('path')}"
-//	scan_path = data[scan_path]
+	
 
 	//String[] propArray=prop.line.toString()
 	//println propArray
