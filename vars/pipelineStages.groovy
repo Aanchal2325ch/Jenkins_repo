@@ -26,6 +26,7 @@ def readPropertyFile(p){
 	println prop
 	
 	def datas = readYaml file: 'vars/property/jenkins.yml1'
+	println datas
 	
 	//data = readYaml file: "vars/property/jenkins.yml"
 	//scan_path.each { e ->
