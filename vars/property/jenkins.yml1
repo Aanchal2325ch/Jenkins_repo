@@ -1,4 +1,6 @@
 project_name: project_name
 project_version: 1.0
-scan_path: groovy
+scan_path:
+ application: Test
+ path: Demo
 
