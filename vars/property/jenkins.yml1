@@ -1,5 +1,4 @@
 project_name: project_name
 project_version: 1.0
 scan_path: groovy
-  //application: groovy
-//    path: Core
+
