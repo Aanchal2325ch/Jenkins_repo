@@ -25,6 +25,8 @@ def readPropertyFile(p){
 	def prop=readProperties file:'vars/my.properties'
 	println prop
 	
+	def datas = readYaml file: 'vars/property/jenkins.yml1'
+	
 	//data = readYaml file: "vars/property/jenkins.yml"
 	//scan_path.each { e ->
           //      echo "Translating ${e.getAt('application')} application 
