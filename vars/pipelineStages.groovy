@@ -35,6 +35,8 @@ def readPropertyFile(p){
         def  String env = p.parameterMap.get(pipeLineConstants.ENVIRONMENT)
         def line = env.substring(0, env.indexOf("-"))
          line = line.toUpperCase()
+	println env
+	println line
 	
 	
 	
