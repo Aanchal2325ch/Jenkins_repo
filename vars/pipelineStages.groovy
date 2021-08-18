@@ -29,7 +29,7 @@ def readPropertyFile(p){
 	println datas
 	
         p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path)
-	println p.scan__path
+	println p.scan_path
 	
 	
 	//data = readYaml file: "vars/property/jenkins.yml"
