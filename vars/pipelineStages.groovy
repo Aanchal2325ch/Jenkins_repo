@@ -32,7 +32,7 @@ def readPropertyFile(p){
         //p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path,p.scanpathMap)
 	//println p.scan_path
 	
-        def  env = s.parameterMap.get(pipeLineConstants.ENVIRONMENT)
+        def  String env = p.parameterMap.get(pipeLineConstants.ENVIRONMENT)
         def line = env.substring(0, env.indexOf("-"))
          line = line.toUpperCase()
 	
