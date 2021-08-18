@@ -32,8 +32,8 @@ def readPropertyFile(p){
 	//p.scanpathMap.put(application.toString().trim,'Test')
 	//println p.scanpathMap
 	
-        p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path,p.scanpathMap)
-	println p.scan_path
+       // p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path,p.scanpathMap)
+	//println p.scan_path
 	// configuring environment
         def  String env = p.parameterMap.get(pipeLineConstants.ENVIRONMENT)
         def line = env.substring(0, env.indexOf("-"))
