@@ -39,9 +39,9 @@ def readPropertyFile(p){
 	def datas = readYaml file: 'vars/property/jenkins.yml1'
 	println datas
 	
-	// p.customTestJobsFilePath = pipeLineConstants.YML_FILE_NAME
-	  // p.customYMLTestConfig = readYaml file: p.customTestJobsFilePath
-	    //println pipeLineConstants.project_name
+	 p.customTestJobsFilePath = pipeLineConstants.YML_FILE_NAME
+	   p.customYMLTestConfig = readYaml file: p.customTestJobsFilePath
+	    println pipeLineConstants.project_name
 	
 	// Validating key in pipeline constants
         p.scan_path = p.parameterMap.containsKey(pipeLineConstants.project_name)
