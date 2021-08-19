@@ -1,11 +1,3 @@
 project_name: project_name
 project_version: 1.0
-D1:
-scan_path:
- application: Test
- path: Demo
-E1:
-scan_path:
- application: Test2
- path: Demo2
 
