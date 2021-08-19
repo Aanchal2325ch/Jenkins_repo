@@ -6,7 +6,7 @@ String[] params =  InputParameters.split(";")
 
 @Field def Map<String,String> parameterMap = new LinkedHashMap<String, String>()
 @Field def Map<String,String> propertyFileMap=new  LinkedHashMap<String,String>()
-@Field def Map<String,String> scanpathMap = new LinkedHashMap<String, String>()
+@Field def Map<String,String> ymlMap = new LinkedHashMap<String, String>()
 @Field def datas="jenkins.yml1"
 @Field def project_name=""
 @Field def project_version=""
