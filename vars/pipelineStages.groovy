@@ -1,3 +1,6 @@
+import org.yaml.snakeyaml.Yaml
+
+
 def initStage(s,params)
 {     // read parameters from job
 	for (param in params) {
@@ -26,6 +29,12 @@ def readPropertyFile(p){
 	def prop=readProperties file:'vars/my.properties'
 	println prop
 	// read yml file
+	
+	
+ def Yaml parser = new Yaml()
+ def List example = parser.load((vars/property/jenkins.yml1).text)
+
+example.each{println it.subject}
 	def datas = readYaml file: 'vars/property/jenkins.yml1'
 	println datas
 	
