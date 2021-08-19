@@ -30,7 +30,7 @@ def readPropertyFile(p){
 	println prop
 	
 	 p.customTestJobsFilePath = pipeLineConstants.YML_FILE_NAME
-	   p.customYMLTestConfig = readYaml file: parent.customTestJobsFilePath
+	   p.customYMLTestConfig = readYaml file: p.customTestJobsFilePath
 	   println(line, pipeLineConstants.project_name, p.ymlMap, p)
 	// read yml file
 	
