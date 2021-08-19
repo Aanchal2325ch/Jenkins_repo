@@ -32,7 +32,7 @@ def readPropertyFile(p){
 	//p.scanpathMap.put(application.toString().trim,'Test')
 	//println p.scanpathMap
 	// Validating key in pipeline constants
-        p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path)
+        p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.scan_path.toString().trim())
 	println p.scan_path
 	println p.parameterMap
 	// configuring environment
