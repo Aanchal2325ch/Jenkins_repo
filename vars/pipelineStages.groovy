@@ -33,6 +33,8 @@ def readPropertyFile(p){
 	def datas = readYaml file: 'vars/property/jenkins.yml1'
 	println datas
 	// load data from yml into map
+	Map<String, scan_path> load = 
+(Map<String, scan_path>) yaml.load(new ClassPathResource("vars/property/jenkins.yml1").getInputStream());
 	
 	// Validating key in pipeline constants
         p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.project_name)
