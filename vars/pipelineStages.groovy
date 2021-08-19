@@ -29,13 +29,22 @@ def readPropertyFile(p){
 	def prop=readProperties file:'vars/my.properties'
 	println prop
 	
+	// configuring environment
+        def  String env = p.parameterMap.get(pipeLineConstants.ENVIRONMENT)
+        def line = env.substring(0, env.indexOf("-"))
+         line = line.toUpperCase()
+	println env
+	println line
+	
+	def datas = readYaml file: 'vars/property/jenkins.yml1'
+	println datas
+	
 	 p.customTestJobsFilePath = pipeLineConstants.YML_FILE_NAME
 	   p.customYMLTestConfig = readYaml file: p.customTestJobsFilePath
 	   println(line, pipeLineConstants.project_name, p.ymlMap, p)
 	// read yml file
 	
-	def datas = readYaml file: 'vars/property/jenkins.yml1'
-	println datas
+	
 	// load data from yml into map
 	 
 	
@@ -43,10 +52,5 @@ def readPropertyFile(p){
         p.scan_path = p.ymlMap.containsKey(pipeLineConstants.project_name)
 	println p.scan_path
 	println p.ymlMap
-	// configuring environment
-        def  String env = p.parameterMap.get(pipeLineConstants.ENVIRONMENT)
-        def line = env.substring(0, env.indexOf("-"))
-         line = line.toUpperCase()
-	println env
-	println line
+	
 }
