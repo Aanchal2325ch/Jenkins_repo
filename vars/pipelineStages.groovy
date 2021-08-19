@@ -41,7 +41,7 @@ def readPropertyFile(p){
 	
 	 p.customTestJobsFilePath = pipeLineConstants.YML_FILE_NAME
 	   p.customYMLTestConfig = readYaml file: p.customTestJobsFilePath
-	   println(line, pipeLineConstants.project_name, p.parameterMap, p)
+	    println pipeLineConstants.project_name
 	// read yml file
 	
 	
