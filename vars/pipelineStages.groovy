@@ -30,49 +30,18 @@ def readPropertyFile(p){
 	println prop
 	// read yml file
 	
-	
- def Yaml parser = new Yaml()
- def List example = parser.load((vars/property/jenkins.yml1).text)
-
-example.each{println it.subject}
 	def datas = readYaml file: 'vars/property/jenkins.yml1'
 	println datas
+	// load data from yml into map
 	
-	//p.scanpathMap.put(application.toString().trim,'Test')
-	//println p.scanpathMap
 	// Validating key in pipeline constants
-        p.scan_path = p.parameterMap.containsKey(pipeLineConstants.project_name)
+        p.scan_path = p.scanpathMap.containsKey(pipeLineConstants.project_name)
 	println p.scan_path
-	println pipeLineConstants.project_name
-	println p.parameterMap
+	println p.scanpathMap
 	// configuring environment
         def  String env = p.parameterMap.get(pipeLineConstants.ENVIRONMENT)
         def line = env.substring(0, env.indexOf("-"))
          line = line.toUpperCase()
 	println env
 	println line
-	
-	
-	
-
-	//String[] propArray=prop.line.toString()
-	//println propArray
-	//for(param in prop){
-	//	String[] myArray=param.split(":", 2)
-	//	prop.each
-	//	line-> println line
-	//	println p.prop.propertyFileMap.put(myArray[0],myArray[1])
-	//	println p.prop.propertyFileMap
-	//}
-	//prop.each
-	//{
-	//	line-> println line
-		
-		// String[] myArray=param.split(":", 2)
-		//println myparent.propertyFileMap.put(myArray[0],myArray[1])
-		// println myparent.propertyFileMap
-	//}
-	
-	
-
 }
