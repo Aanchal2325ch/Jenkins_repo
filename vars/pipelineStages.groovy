@@ -28,7 +28,7 @@ def readPropertyFile(p){
 	//  read data from property file
 	def prop=readProperties file:'vars/my.properties'
 	println prop
-	
+	pipeLineUtil.validateMandatoryFields(prop)
 	// configuring environment
         def  String env = p.parameterMap.get(pipeLineConstants.ENVIRONMENT)
         def line = env.substring(0, env.indexOf("-"))
