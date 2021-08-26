@@ -5,3 +5,5 @@ import groovy.transform.Field
 @Field final YML_FILE_NAME ="jenkins.yml1"
 @Field final ERROR_MESSAGE = " is a mandatory attribute and cannot be null or empty"
 @Field final TESTSCOPE_KEY="testscope"
+@Field final ROLLBACK_KEY="Rollback"
+@Field final PROMOTE_KEY="Promote"
