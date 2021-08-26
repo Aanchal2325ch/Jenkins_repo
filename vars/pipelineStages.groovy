@@ -47,7 +47,7 @@ def readPropertyFile(p){
 	 println pipeLineConstants.project_name
 	
 }
-}
+
 //code for rollback
 	 s.testscope = s.parameterMap.get(pipeLineConstants.TESTSCOPE_KEY)
         if(s.testscope!=null&&(s.testscope.equalsIgnoreCase(pipeLineConstants.ROLLBACK_KEY)||s.testscope.equalsIgnoreCase(pipeLineConstants.PROMOTE_KEY))){
