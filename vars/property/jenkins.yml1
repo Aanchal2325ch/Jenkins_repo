@@ -2,8 +2,7 @@ project_name: project_name
 project_version: 1.0
 D1:
 Rollbackenabled: false
-rollback: 
--init
+rollback: init
 scan_path:
  application: Test
  path: Demo
