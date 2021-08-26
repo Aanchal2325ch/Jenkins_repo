@@ -4,3 +4,4 @@ import groovy.transform.Field
 @Field final project_name="project_name"
 @Field final YML_FILE_NAME ="jenkins.yml1"
 @Field final ERROR_MESSAGE = " is a mandatory attribute and cannot be null or empty"
+@Field final TESTSCOPE_KEY="testscope"
