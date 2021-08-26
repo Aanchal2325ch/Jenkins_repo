@@ -20,8 +20,10 @@ def initStage(s,params)
 		
 	}	
 	println s.parameterMap
-	
-	
+	//code for rollback
+	 s.testscope = s.parameterMap.get(pipeLineConstants.TESTSCOPE_KEY)
+        if(s.testscope!=null&&(s.testscope.equalsIgnoreCase(pipeLineConstants.ROLLBACK_KEY)||s.testscope.equalsIgnoreCase(pipeLineConstants.PROMOTE_KEY))){
+            println "Validation started for deploy rollback flow,current test scope is " + s.testscope
 
 }
 def readPropertyFile(p){
