@@ -13,6 +13,9 @@ String[] params =  InputParameters.split(";")
 @Field def scan_path=""
 @Field def application=""
 @Field def path=""
+@Field def testscope=""
+@Field def rollbackresult="SKIP"
+@Field def promoteresult="SKIP"
 pipeline
 {
   agent any
