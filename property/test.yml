@@ -14,6 +14,10 @@ d1:
    JobParameter:
     Line: d1
     BRANCH: gisc-kt
+    common:
+    Stages: health->smoke->testSuite4|testSuite5|testSuite6|testSuite7|testSuite8|testSuite9|testSuite10|testSuite11|testSuite12->performance|testSuiteRedEvent|testSuiteNonParallel|testSuite1|testSuite2|testSuite3->confluence_publisher_d_line->postbuild_action
+    CustomParameters: eibEnv=d1-np,testEnv=d1-np,fibEnv=d0-np,s3Folder=14,npeEnv=d,releaseVersion=[version],performance_host=navigator-oauth.d1-np-eib.navcloud.sonynei.net,performance_ehost=eve-purchase.d1-np-eib.navcloud.sonynei.net
+
  np:
    Stages: health->smoke->regression|ps4|ps5
    CustomParameters: eibEnv=d1-np,testEnv=d1-np,fibEnv=d1-np,s3Folder=14,npeEnv=d,releaseVersion=[version]
